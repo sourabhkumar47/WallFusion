@@ -80,7 +80,7 @@ internal fun HomeScreen(
     )
 }
 
-@Preview
+@Preview(showBackground = true,backgroundColor = 0xFFFFFFFF)
 @Composable
 fun ExplorePreview() {
     MysplashTheme {
@@ -120,7 +120,7 @@ fun Explore(
     }
 }
 
-@Preview
+@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
 @Composable
 internal fun EditorialFeedPreview() {
     MysplashTheme {
