@@ -67,7 +67,7 @@ fun TopicCard(
                 contentDescription = "Image",
                 modifier = Modifier
                     .fillMaxSize()
-                    .clip(RoundedCornerShape(size = 10.dp)),
+                    .clip(RoundedCornerShape(size = 16.dp)),
                 contentScale = ContentScale.Crop,
                 colorFilter = ColorFilter.tint(Color(0x66000000), BlendMode.Darken)
             )
