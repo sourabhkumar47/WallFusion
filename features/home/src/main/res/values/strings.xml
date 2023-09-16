@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="home">Home</string>
-    <string name="explore">EXPLORE</string>
-    <string name="editorial">EDITORIAL</string>
+    <string name="explore">BROWSE</string>
+    <string name="editorial">DISCOVER</string>
 </resources>

@@ -80,14 +80,6 @@ internal fun HomeScreen(
     )
 }
 
-@Preview(showBackground = true,backgroundColor = 0xFFFFFFFF)
-@Composable
-fun ExplorePreview() {
-    MysplashTheme {
-        Explore(topics = remember { mutableStateOf(listOf(Topic.Default, Topic.Default)) }) {}
-    }
-}
-
 @Composable
 fun Explore(
     modifier: Modifier = Modifier, topics: State<List<Topic>>, onTopicClick: (Topic) -> Unit
@@ -117,16 +109,6 @@ fun Explore(
                 TopicCard(topics.value[index], onTopicClick)
             }
         }
-    }
-}
-
-@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
-@Composable
-internal fun EditorialFeedPreview() {
-    MysplashTheme {
-        EditorialFeed(Modifier, photos = flow {
-            emit(PagingData.from(listOf(Photo.Default, Photo.Default)))
-        }, onPhotoClick = {}, onUserClick = {}, rememberLazyStaggeredGridState())
     }
 }
 
@@ -163,5 +145,24 @@ internal fun EditorialFeed(
             horizontalArrangement = Arrangement.spacedBy(20.dp),
             state = lazyStaggeredGridState
         )
+    }
+}
+
+
+@Preview(showBackground = true,backgroundColor = 0xFFFFFFFF)
+@Composable
+fun ExplorePreview() {
+    MysplashTheme {
+        Explore(topics = remember { mutableStateOf(listOf(Topic.Default, Topic.Default)) }) {}
+    }
+}
+
+@Preview(showBackground = true, backgroundColor = 0xFFFFFFFF)
+@Composable
+internal fun EditorialFeedPreview() {
+    MysplashTheme {
+        EditorialFeed(Modifier, photos = flow {
+            emit(PagingData.from(listOf(Photo.Default, Photo.Default)))
+        }, onPhotoClick = {}, onUserClick = {}, rememberLazyStaggeredGridState())
     }
 }
