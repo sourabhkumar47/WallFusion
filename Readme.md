@@ -1,6 +1,6 @@
-# Mysplash
+# Wall-Fusion
 
-Mysplash is unofficial [Unsplash](https://unsplash.com/) client for android,
+Wall Fusion is unofficial [Unsplash](https://unsplash.com/) client for android,
 allowing you to search for inspiration from over 3 million
 carefully selected photos in high quality and
 download them for free.
